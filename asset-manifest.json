@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/One-Soul-App-React/static/css/main.ab9fbcb0.chunk.css",
+    "main.js": "/One-Soul-App-React/static/js/main.412d3d82.chunk.js",
+    "main.js.map": "/One-Soul-App-React/static/js/main.412d3d82.chunk.js.map",
+    "runtime-main.js": "/One-Soul-App-React/static/js/runtime-main.3225e625.js",
+    "runtime-main.js.map": "/One-Soul-App-React/static/js/runtime-main.3225e625.js.map",
+    "static/js/2.79f9cdc3.chunk.js": "/One-Soul-App-React/static/js/2.79f9cdc3.chunk.js",
+    "static/js/2.79f9cdc3.chunk.js.map": "/One-Soul-App-React/static/js/2.79f9cdc3.chunk.js.map",
+    "static/js/3.5cbb46ce.chunk.js": "/One-Soul-App-React/static/js/3.5cbb46ce.chunk.js",
+    "static/js/3.5cbb46ce.chunk.js.map": "/One-Soul-App-React/static/js/3.5cbb46ce.chunk.js.map",
+    "index.html": "/One-Soul-App-React/index.html",
+    "static/css/main.ab9fbcb0.chunk.css.map": "/One-Soul-App-React/static/css/main.ab9fbcb0.chunk.css.map",
+    "static/js/2.79f9cdc3.chunk.js.LICENSE.txt": "/One-Soul-App-React/static/js/2.79f9cdc3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3225e625.js",
+    "static/js/2.79f9cdc3.chunk.js",
+    "static/css/main.ab9fbcb0.chunk.css",
+    "static/js/main.412d3d82.chunk.js"
+  ]
+}
