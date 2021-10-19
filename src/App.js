@@ -7,25 +7,29 @@ import Buttons from './Components/Buttons';
 
 function App() {
 
-
-
 //  const [texts, setTexts] = useState([
   const texts = [
   {
     header: "Are you ready?",
-    body: "Welcome to you very first challenge! I guarantee you your life will change.",
-    challengeChoice: "Choose your challenge: "
+    body: "Welcome to your very first challenge! I guarantee you your life will change.",
+    challengeChoice: "Choose your challenge: ",
+    id: 1,
+    condition: true
   },
   {
     header: "Instructions",
     body: "Body",
-    challengeChoice: ""
+    challengeChoice: "",
+    id: 2,
+    condition: false
   }
   ]
-  
- 
- const nextText = () => texts[0];
 
+
+  
+  
+  const nextText = texts.map(text => text.id++)
+ 
 //    {texts.map(texts) => }
   /*
     {
@@ -41,8 +45,10 @@ function App() {
     <Logo />
     <div className="wrapper">
     <Header texts={texts} />
-    <Body texts={texts} />
-    <Buttons nextText={nextText}/>
+
+
+    <Body texts={texts}  />
+    <Buttons />
 
     </div>
     </>

@@ -1,13 +1,26 @@
 import React from 'react'
 
-const Body = ({texts}) => {
+
+
+
+
+const Body = ({nextText, texts}) => {
+
+
+ 
+ 
     return (
-        <div>
-            <p>{texts[0].body}</p>
-            <br />
-            <h3>{texts[0].challengeChoice}</h3>
-            <br />
-        </div>
+
+
+        <div key={texts.id}>
+        <p>{texts.body}</p>
+        <br />
+        <h3>{texts.challengeChoice}</h3>
+        <br />
+         </div>
+
+
+  
     )
 }
 
