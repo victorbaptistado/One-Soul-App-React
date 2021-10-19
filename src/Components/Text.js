@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Text = () => {
+const Text = ({text}) => {
+
     return (
-        <div>
+   
+        <div key={text.id}>
+      
+            <h2>{text.header}</h2>
+            <p>{text.body}</p>
+            <p>{text.challengeChoice}</p>
             
         </div>
     )
