@@ -1,6 +1,6 @@
-import React from 'react'
-import Text from './Text'
-import { useState } from 'react'
+import React, { useState } from 'react';
+import Buttons from './Buttons';
+//import Text from './Text';
 
 const Texts = () => {
 
@@ -10,29 +10,46 @@ const Texts = () => {
           body: "Welcome to your very first challenge! I guarantee you your life will change.",
           challengeChoice: "Choose your challenge: ",
           id: 1,
-          condition: true
+
         },
         {
           header: "Instructions",
           body: "Body",
           challengeChoice: "",
           id: 2,
-          condition: false
+
         }])
     
+      
+      let currentId = 1;
 
 
-        let textShow = () => {setText(texts.filter((text) => text.condition))};
-       
-console.log(textShow);
+
+
+      let textFilt = texts.filter(text => text.id === currentId) ;
+
+      function nextArray (id) {
+    
+        setText(textFilt.filter(text => text.id === 2))
+      
+      }      
+      
+
 
     return (
-        <>
-         {texts.map ((text) => (
-        <Text key={text.id} text={text} textShow={textShow}/>))}
     
-        </>
-    )
-    }
+      textFilt.map(text => 
+      <div key={text.id}>
+
+       <h2 >{text.header}</h2>
+       <p>{text.body}</p>
+       <h2>{text.challengeChoice}</h2>
+       <Buttons key={text.id} text={text} nextArray={nextArray}/>
+       </div>
+      )
+      
+        
+    );
+      }
 
 export default Texts
