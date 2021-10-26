@@ -1,23 +1,21 @@
 import React from 'react';
 
 
-const Buttons = ({text, nextArray}) => {
+const Buttons = ({  count, setCount }) => {
 
 
 
     return (
 
 
-        <div>
-            
-            <button className="btnIntro" onClick={()=>nextArray(text.id)}>Social Development</button>
-            <button className="btnIntro">Physical Development</button>
+        <div> 
+            <button className="btnIntro" onClick={()=> setCount(++ count)}> Social Development</button>
+            <button className="btnIntro"><img href=""/>Physical Development</button>
             <button className="btnIntro">Self Development</button>
-            
-        </div>
-          
+            </div>
+
     )
-            
+             
 }
 
 export default Buttons
