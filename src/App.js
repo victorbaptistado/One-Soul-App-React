@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Logo />
-    <div className="wrapper">
+    <div className="wrapper" >
     <Body />
 
     </div>

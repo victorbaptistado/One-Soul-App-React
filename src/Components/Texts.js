@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Buttons from './Buttons';
+import Text from './Text';
+import firstImage from "./Images/Challenges/01-Yoga-Lady.png"
 //import Text from './Text';
 
 const Texts = () => {
@@ -8,6 +10,7 @@ const Texts = () => {
         {
           header: "Are you ready?",
           body: "Welcome to your very first challenge! I guarantee you your life will change.",
+         
           challengeChoice: "Choose your challenge: ",
           id: 1,
 
@@ -15,7 +18,7 @@ const Texts = () => {
         {
           header: "Instructions",
           body: "Body",
-          challengeChoice: "",
+          image: <img className="image-challenge" src={firstImage}/>,
           id: 2,
 
         }])
@@ -28,17 +31,12 @@ const Texts = () => {
   
 
     return (
-    
       textFilt.map(text => 
       <div key={text.id}>
-
-       <h2 >{text.header}</h2>
-       <p>{text.body}</p>
-       <h2>{text.challengeChoice}</h2>
+        <Text text={text} count={count} />
        {count === 1 ? <Buttons key={text.id} count={count} setCount={setCount}/>: ""}
        </div>
       )
-      
         
     );
       }
