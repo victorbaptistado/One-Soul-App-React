@@ -8,10 +8,15 @@ const Text = ({text, count}) => {
  
     return (
         <>
-        <div className="columns">
+
+        <div className={`${count > 1 ? 'columns' : ""} `}  > 
         <div className="container1" >
-        <div className="columnsHead">
-        <button className="homebtn"><img src={Menu}/></button>
+    
+        <div className={`${count>1 ? "columnsHead" : ""} `}> 
+
+        {count > 1 ?
+        <button className="homebtn"><img src={Menu}/></button> : ""}
+
         <h2 >{text.header}</h2>
         </div>
         <p>{text.body}</p>
@@ -22,14 +27,16 @@ const Text = ({text, count}) => {
         <div className="container2">
         {text.image} 
         </div>
-        
+     
         </div>
-        <div className="row">
-        {  count === 2 ? 
-        <div>
-        <button className="returnbtn"><img src={ArrowLeft}/></button>
-        <button className="nextbtn" className="btn">Next</button></div> : "" 
-        }
+        
+        
+        <div className={`${count > 1 ? "row" :""}`}>
+        
+        {  count > 1 ? 
+        <div className="columns">
+        <button className="returnbtn"><img src={ArrowLeft}/></button> 
+        <button className="btn">Next</button></div> : "" }
             
         </div>
 
