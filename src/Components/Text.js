@@ -9,20 +9,25 @@ const Text = ({text, count}) => {
     return (
         <>
 
-        <div className={`${count > 1 ? 'columns' : ""} `}  > 
-        <div className="container1" >
-    
-        <div className={`${count>1 ? "columnsHead" : ""} `}> 
+    {/*  TEXTS: CHALLENGES AND INTRO  */}
 
+        <div className={`${count > 2 ? 'columns' : ""} `}  > 
+        <div className="container1" >
+        <br/>  
         {count > 1 ?
-        <button className="homebtn"><img src={Menu}/></button> : ""}
+        <a href="./App.js" className="homebtn"><img src={Menu}/></a> : ""}
 
         <h2 >{text.header}</h2>
-        </div>
+  
+       
+  
+        <br/><br/>
+  
         <p>{text.body}</p>
         <h2>{text.challengeChoice}</h2>
         </div>
 
+        {/*  IMAGES: CHALLENGES  */}
 
         <div className="container2">
         {text.image} 
@@ -30,14 +35,16 @@ const Text = ({text, count}) => {
      
         </div>
         
-        
-        <div className={`${count > 1 ? "row" :""}`}>
-        
-        {  count > 1 ? 
-        <div className="columns">
-        <button className="returnbtn"><img src={ArrowLeft}/></button> 
-        <button className="btn">Next</button></div> : "" }
-            
+        {/*  BUTTONS: NEXT AND RETURN  */}
+
+        <div className={`${count > 2 ? "row" :""}`}>
+        <div className="btnColumns">
+        {  count > 2 ? 
+        <button className="returnbtn"><img src={ArrowLeft}/></button> :""}
+        {count > 1 ?
+        <button className="btn">Next</button> : ""} 
+        <br/><br/><br/>
+        </div>
         </div>
 
         </>
