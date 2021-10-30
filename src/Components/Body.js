@@ -5,7 +5,7 @@ import Texts from './Texts'
 
 
 
-const Body = ({nextText, texts}) => {
+const Body = () => {
 
 
  

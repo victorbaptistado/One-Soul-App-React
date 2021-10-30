@@ -3,7 +3,6 @@
 :root {
   font-size: 62.5%;
   background-color: rgb(41, 63, 83);
-  height: 10%;
 }
 
 * {
@@ -16,7 +15,8 @@
 /* UTILITIES */
 
 .wrapper {
-  max-width: 80vw;
+  max-width: 90vw;
+  min-height: 25vw;
   max-height: 155vw;
   justify-items: center;
   background-color: rgb(248, 228, 197);
@@ -25,9 +25,15 @@
   border: 5px solid rgba(233, 154, 64, 0.7);
 }
 
+.container1 {
+}
+
+.container2 {
+}
+
 .columns {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
 }
 
 .btnColumns {
@@ -38,13 +44,17 @@
 .row {
   display: flex;
   flex-direction: row;
+  margin-left: 30%;
+
+  margin-top: 12%;
 }
 
 .image-challenge {
-  margin-top: 2rem;
-  margin-left: 9%;
-  border-radius: 0rem 2rem 0rem 0rem;
-  width: 70%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  border-radius: 0rem 2rem 0rem 2rem;
+  width: 85%;
 }
 
 /* TEXT */
@@ -98,6 +108,7 @@ p {
   text-align: center;
   border: 0.1rem solid #56a5eb;
   margin-bottom: 6%;
+  margin-top: 1%;
   text-decoration: none;
   color: #edf1f5;
   background-color: rgb(233, 154, 64);
@@ -107,16 +118,13 @@ p {
 .returnbtn {
   background-color: transparent;
   border-style: none;
-  margin-bottom: 5%;
-  margin-left: 10rem;
+  height: 0%;
+  margin-right: 10%;
+  margin-top: 4%;
 }
 
 .returnbtn:hover {
   background-color: red;
-}
-
-.nextbtn {
-  margin-left: 4rem;
 }
 
 .btnIntro:hover,
@@ -127,7 +135,7 @@ p {
 }
 
 .homebtn {
-  margin: 76%;
+  margin: 10%;
   width: 5%;
   border-radius: 90%;
 }
