@@ -26,6 +26,7 @@
 }
 
 .container1 {
+  margin: 0% 0% 0% 0%;
 }
 
 .container2 {
@@ -33,7 +34,7 @@
 
 .columns {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 40%;
 }
 
 .btnColumns {
@@ -44,15 +45,16 @@
 .row {
   display: flex;
   flex-direction: row;
-  margin-left: 30%;
-
-  margin-top: 12%;
+  text-align: center;
+  margin-left: 34%;
+  margin-right: 15%;
+  margin-top: 0%;
 }
 
 .image-challenge {
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 10%;
+  margin-left: 0%;
   border-radius: 0rem 2rem 0rem 2rem;
   width: 85%;
 }
@@ -69,7 +71,7 @@ h1 {
 h2 {
   font-size: 3rem;
 
-  padding: 1rem 0px;
+  padding: 0rem 0px;
   text-align: center;
 }
 
@@ -85,6 +87,12 @@ p {
   margin: 0% 3% 0% 3%;
 }
 
+input {
+  font-size: 2.3rem;
+  margin-bottom: 2%;
+  padding: 0%;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -94,7 +102,7 @@ p {
   text-align: center;
   border: 0.1rem solid #56a5eb;
   margin-top: 5%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   text-decoration: none;
   color: #56a5eb;
   background-color: white;
@@ -107,7 +115,7 @@ p {
   width: 20rem;
   text-align: center;
   border: 0.1rem solid #56a5eb;
-  margin-bottom: 6%;
+  margin-bottom: 0%;
   margin-top: 1%;
   text-decoration: none;
   color: #edf1f5;
@@ -120,11 +128,12 @@ p {
   border-style: none;
   height: 0%;
   margin-right: 10%;
-  margin-top: 4%;
+  margin-top: 4.5%;
 }
 
 .returnbtn:hover {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.644);
+  border-radius: 90%;
 }
 
 .btnIntro:hover,
@@ -135,7 +144,7 @@ p {
 }
 
 .homebtn {
-  margin: 10%;
+  margin: 3%;
   width: 5%;
   border-radius: 90%;
 }

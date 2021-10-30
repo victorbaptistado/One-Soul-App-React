@@ -9,6 +9,7 @@ const Buttons = ({  count, setCount }) => {
     return (
 
 <>
+        {/*----- BUTTON INTRO -----*/}
         {count === 1 ?
         <div className="btnColumns"> 
         <br/><br/>
@@ -17,17 +18,18 @@ const Buttons = ({  count, setCount }) => {
             <button className="btnIntro">Self Development</button>
          </div> : ""}
 
+
+        {/*----- BUTTON NEXT & RETURN -----*/}
+
         <div className={`${count > 2 ? "row" :"btnColumns"}`}>
+            <br/>
         {  count > 2 ? 
         <button className="returnbtn" onClick={()=> setCount(-- count)}><img src={ArrowLeft}/></button> :""}
         {count > 1 ?
         <button className="btn" onClick={()=> setCount(++ count)}>Next</button> : ""} 
+        </div>
 
-
-
-</div>
-
-</>
+        </>
     )
              
 }

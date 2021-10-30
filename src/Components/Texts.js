@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Buttons from './Buttons';
-import Text from './Text';
+import Challenge from './Challenge';
+import Challengeform from './Challengeform';
 import ImagesChallenge from './ImagesChallenge';
 import firstImage from "./Images/Challenges/01-Yoga-Lady.png"
 //import Text from './Text';
@@ -12,7 +13,7 @@ const Texts = () => {
           header: "Are you ready?",
           body: `Welcome to your very first challenge! I guarantee you your life will change.\n\n`,
          
-          challengeChoice: `Choose your challenge: `,
+          challengeChoice: `Choose your challenge:`,
           id: 1,
 
         },
@@ -27,37 +28,63 @@ const Texts = () => {
 
         },
         {
-          header: "Instructions",
-          body: `Body`,
+          header: "Mindset Builder",
+          body: `Explanation. The NPL Imagery, to build confidence`,
           image: <img className="image-challenge" src={firstImage}/>,
           id: 3,
+        
+        },
+        {
+          header: "Body and Mind",
+          body: `How body affects mind. Exercise: Look up, shoulders back,
+           posture upgrate`,
+          image: <img className="image-challenge" src={firstImage}/>,
+          id: 4,
+        },
+        {
+          header: "The Magician",
+          body: `Imagery`,
+          image: <img className="image-challenge" src={""}/>,
+          id: 5,
 
-        }])
-
-
-
-
-
+        },
+        {
+          header: "Role Model",
+          body: `Now I want you to think about 3 people who you can model their actions`,
+          id: 6,
+        }
+      ])
 
 
       const [count, setCount] = useState(1);
       
       let textFilt = texts.filter(text => text.id === count) ;
 
-
-  
-
     return (
       
       textFilt.map(text => 
       <div key={text.id}>
-      <div className={`${count > 2 ? 'columns' : ""} `}  > 
+
+
+      <div className={`${(count > 2) && (count !== 6) ? 'columns' : ""} `}  > 
       <div className="container1" >
-      <Text text={text} count={count} setCount={setCount} />
-      <Buttons key={text.id} count={count} setCount={setCount}/>
+
+
+      {count === 6 ? 
+      <Challengeform text={text} count={count} setCount={setCount} /> :
+      <Challenge text={text} count={count} setCount={setCount} />    
+      }
+
+
+
+    <Buttons key={text.id} count={count} setCount={setCount}/>
       </div>
       <div className="container2">
-      <ImagesChallenge text={text}/>
+
+      {count !== 6 ?
+      <ImagesChallenge text={text}/> : ""
+      }
+
       </div> 
       </div>
       </div>

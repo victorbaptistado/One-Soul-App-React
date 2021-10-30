@@ -2,10 +2,10 @@ import React from 'react';
 import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import Menu from './Images/Utilities/Menu.gif';
 
-const Text = ({text, count, setCount}) => {
-
-
+const Challenge = ({text, count, setCount}) => {
  
+ 
+
     return (
         <>
 
@@ -20,6 +20,7 @@ const Text = ({text, count, setCount}) => {
         <br/><br/>
   
         <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p>
+
         <h2 style={{whiteSpace: "pre-wrap"}}>{text.challengeChoice}</h2>
         
 
@@ -27,4 +28,4 @@ const Text = ({text, count, setCount}) => {
     ) 
         }
 
-export default Text
+export default Challenge
