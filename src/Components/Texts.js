@@ -29,15 +29,20 @@ const Texts = () => {
         },
         {
           header: "Mindset Builder",
-          body: `Explanation. The NPL Imagery, to build confidence`,
+          body: `It all starts with the Mind-Set. 
+          It's about opening yourself to a richer state and diving into it. 
+          Before we go to the field and build-up your social skills on practice, 
+          we'll develop your inner state to a happier, 
+          The NPL Imagery, to build confidence`,
           image: <img className="image-challenge" src={firstImage}/>,
           id: 3,
         
         },
         {
           header: "Body and Mind",
-          body: `How body affects mind. Exercise: Look up, shoulders back,
-           posture upgrate`,
+          body: `Mind affects body. Body affects mind.`,
+          exerciseAllow: true,
+          exercise: `Look up. Shoulders back. posture upgrate`,
           image: <img className="image-challenge" src={firstImage}/>,
           id: 4,
         },

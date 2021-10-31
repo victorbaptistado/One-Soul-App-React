@@ -1,6 +1,9 @@
 import React from 'react';
 import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import Menu from './Images/Utilities/Menu.gif';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfo } from '@fortawesome/free-solid-svg-icons';
+
 
 const Challenge = ({text, count, setCount}) => {
  
@@ -21,6 +24,23 @@ const Challenge = ({text, count, setCount}) => {
   
         <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p>
 
+        {/* Exercise*/}
+
+        <br/><br/>
+        {text.exerciseAllow === true ?
+        <div className="exercise">
+        
+        <div className="row">
+        <p style={{fontFamily: "cursive"}}>Exercise!</p>
+        <button className="infobtn"><FontAwesomeIcon icon={faInfo} style={{color: "red"}} /></button>
+ 
+        </div>
+        <br/>
+        <p style={{fontFamily: "cursive"}}>{text.exercise}</p>
+        
+        </div> : ""
+        }
+        
         <h2 style={{whiteSpace: "pre-wrap"}}>{text.challengeChoice}</h2>
         
 
