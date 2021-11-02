@@ -51,6 +51,15 @@
   margin-top: 0%;
 }
 
+.rowExercise {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 50%;
+  margin-top: 0%;
+}
+
 .image-challenge {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -62,11 +71,23 @@
 .exercise {
   background-color: white;
   color: red;
-
   text-align: center;
-  width: 60%;
-  padding: 2%;
-  margin-left: 20%;
+  width: 90%;
+  padding: 3% 0% 3% 0%;
+  margin-top: 2%;
+  margin-left: 7%;
+
+  border-radius: 2rem;
+}
+
+.infoBox {
+  display: inherit;
+  border-style: ridge;
+  background-color: blue;
+  color: white;
+  padding: 1% 2% 1% 2%;
+  width: 100%;
+  margin: 0%;
   border-radius: 2rem;
 }
 
@@ -90,6 +111,12 @@ h3 {
   font-size: 2rem;
   padding: 2rem 0px;
   text-align: center;
+}
+
+h4 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0%;
 }
 
 p {
@@ -165,8 +192,9 @@ input {
   background-color: rgba(2, 255, 242, 0.637);
   border-style: ridge;
   border-radius: 5rem;
-  padding: 1%;
-  min-width: 3rem;
-  width: 3rem;
+  position: sticky;
+  padding: 1.5rem;
+  width: 5rem;
+  height: 4.5rem;
   margin-left: 10%;
 }

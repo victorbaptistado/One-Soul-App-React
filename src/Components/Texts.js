@@ -19,7 +19,8 @@ const Texts = () => {
         },
         {
           header: "INSTRUCTIONS",
-          body: `Your journey to self-improvement is about to begin! Congratulation for taking this step. 
+          body: `Your journey to self-improvement is about to begin! 
+          Congratulation for taking this step. 
           Each quest must be taken in a day, and once you accomplish the daily challenge, click the NEXT button. 
           If for any reason you're not able to realise the challenge, press the 'scape' button to jump to the next challenge. 
           Once per day, dedicate yourself to each challenge. \n\nNow let's start!`,
@@ -42,6 +43,7 @@ const Texts = () => {
           header: "Body and Mind",
           body: `Mind affects body. Body affects mind.`,
           exerciseAllow: true,
+          exerciseInfo: "Why is this important? As body affects the mind, finding a position of confidence can release ",
           exercise: `Look up. Shoulders back. posture upgrate`,
           image: <img className="image-challenge" src={firstImage}/>,
           id: 4,
