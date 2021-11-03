@@ -29,7 +29,7 @@ const Challenge = ({text, count, setCount}) => {
         {/* Exercise*/}     
 
         {text.exerciseAllow === true ?
-        <div className="exercise"><Exercise text={text}/></div> : ""}
+        <Exercise text={text}/> : ""}
 
    
 
