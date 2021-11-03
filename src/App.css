@@ -17,7 +17,8 @@
 .wrapper {
   max-width: 90vw;
   min-height: 25vw;
-  max-height: 155vw;
+  max-height: 200vw;
+
   justify-items: center;
   background-color: rgb(248, 228, 197);
   margin: 0 auto;

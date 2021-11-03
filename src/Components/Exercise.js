@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestionCircle, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faInfo, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 
 
@@ -11,19 +11,16 @@ const Exercise = ({text}) => {
 
 const [noInfo, setInfo] = useState( "" );
 
-const [info, setClear] = useState(setInfo);
 
-
-
-  function appear (){ setInfo ( 
+  function appear (){ setInfo (
   <div className="infoBox">
+  <button onClick={() => buttonClear()}> <FontAwesomeIcon icon={faTimesCircle} style={{color: "red"}}/></button>
   <h4>{text.exerciseInfo}</h4>
   </div>)
   }
 
  
-  function buttonClear() { if (appear==true) {
-  setClear(setInfo(""))}};
+  const buttonClear = () => { setInfo("")};
 
   /*
   const disappear = () => {
@@ -34,7 +31,7 @@ const [info, setClear] = useState(setInfo);
     return (
    
       <>  
-      <div className="exercise" onClick={buttonClear()}> 
+      <div className="exercise" > 
         <div className="rowExercise" >
           
         <h4 style={{fontFamily: "cursive"}}>Exercise!</h4>
@@ -43,7 +40,7 @@ const [info, setClear] = useState(setInfo);
         </div>
   
         
-        <p style={{fontFamily: "cursive"}}>{text.exercise}</p>
+        <p style={{fontFamily: "cursive"},{whiteSpace: "pre-wrap"}}>{text.exercise}</p>
         {noInfo}
         </div>
         </>

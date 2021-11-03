@@ -4,6 +4,7 @@ import Challenge from './Challenge';
 import Challengeform from './Challengeform';
 import ImagesChallenge from './ImagesChallenge';
 import firstImage from "./Images/Challenges/01-Yoga-Lady.png"
+import secondImage from "./Images/Challenges/04-Posture.jpg"
 //import Text from './Text';
 
 const Texts = () => {
@@ -11,7 +12,9 @@ const Texts = () => {
     const [texts, setText] = useState([
         {
           header: "Are you ready?",
-          body: `Welcome to your very first challenge! I guarantee you your life will change.\n\n`,
+          body:
+          <div>
+          <br/><h4>Welcome to your very first challenge! I guarantee you your life will change.</h4><br/></div>,
          
           challengeChoice: `Choose your challenge:`,
           id: 1,
@@ -19,47 +22,73 @@ const Texts = () => {
         },
         {
           header: "INSTRUCTIONS",
-          body: `Your journey to self-improvement is about to begin! 
-          Congratulation for taking this step. 
-          Each quest must be taken in a day, and once you accomplish the daily challenge, click the NEXT button. 
-          If for any reason you're not able to realise the challenge, press the 'scape' button to jump to the next challenge. 
-          Once per day, dedicate yourself to each challenge. \n\nNow let's start!`,
+          body:  <div>
+          <h4>Congratulation for taking this step. Your journey to self-improvement is about to begin! </h4> 
+          <br/>
+          <h4>Once you accomplish a challenge, click the NEXT button. </h4>
+          </div>,
           id: 2,
 
 
         },
         {
           header: "Mindset Builder",
-          body: `It all starts with the Mind-Set. 
-          It's about opening yourself to a richer state and diving into it. 
-          Before we go to the field and build-up your social skills on practice, 
-          we'll develop your inner state to a happier, 
-          The NPL Imagery, to build confidence`,
+          body: `      It all starts with the Mind-Set. 
+      It's about opening yourself to a richer state and dive into it. Delight ! 
+      Before we go to the field and build-up your social skills on practice, 
+      we'll develop your inner state to a happier, more confident state. 
+      Let's build your mindset!
+          `,
           image: <img className="image-challenge" src={firstImage}/>,
           id: 3,
         
         },
         {
           header: "Body and Mind",
-          body: `Mind affects body. Body affects mind.`,
-          exerciseAllow: true,
-          exerciseInfo: "Why is this important? As body affects the mind, finding a position of confidence can release ",
-          exercise: `Look up. Shoulders back. posture upgrate`,
-          image: <img className="image-challenge" src={firstImage}/>,
+          body: `      Mind affects body. Body affects mind.
+      Take care of your body. Create healthy habits: 
+      Improve your diet, do physical exercises (like lifting weights, jogging, martial arts). 
+      A healthy life is the way to allow yourself for the best you can become. 
+
+      We'll focus now on the correct use of the body. 
+      Using your body correctly is definitely the easiest path for a mindset 
+      that will lead you to an active social presence. `,
+          image: <img className="image-challenge" src={""}/>,
           id: 4,
         },
         {
-          header: "The Magician",
-          body: `Imagery`,
-          image: <img className="image-challenge" src={""}/>,
+          header: "Body and Mind",
+          exerciseAllow: true,
+          exerciseInfo: "Why is it so important? As body affects the mind, finding a position of confidence can reduce social anxiety.",
+          exercise: `Get up. Shoulders back! 
+Look above! Upgrade your posture. 
+Every moment that you need a confidence boost, find that posture. 
+That's your first path to a higher social state.`,
+      image: <img className="image-challenge" src={secondImage}/>,
           id: 5,
-
         },
         {
           header: "Role Model",
-          body: `Now I want you to think about 3 people who you can model their actions`,
+          body: `Now I want you to think about 3 people who you can model their actions. 
+          Write down their names, we'll use them as models to achieve your gols. 
+          Reflect about their values and beliefs  . In time of doubts, ask yourself: what would they do? `,
           id: 6,
-        }
+        },
+        {
+        header: "Music Boost",
+        body: `Çet's have fun! 
+        Create a playlist: call it "Energy Boost" (or whatever you may want to identify.)
+        `,
+        image: <img className="image-challenge" src={""}/>,
+        id: 7,
+        },
+        {
+          header: "The Magician",
+          body: `Imagination is key to success. Imagination releases a powerfull mind.`,
+          image: <img className="image-challenge" src={""}/>,
+          id: 8,
+
+        },
       ])
 
 
@@ -73,7 +102,7 @@ const Texts = () => {
       <div key={text.id}>
 
 
-      <div className={`${(count > 2) && (count !== 6) ? 'columns' : ""} `}  > 
+      <div className={`${(count > 2) && (count !== 4) & (count !== 6) ? 'columns' : ""} `}  > 
       <div className="container1" >
 
 
@@ -88,7 +117,7 @@ const Texts = () => {
       </div>
       <div className="container2">
 
-      {count !== 6 ?
+      {(count !== 4),(count !== 6) ?
       <ImagesChallenge text={text}/> : ""
       }
 

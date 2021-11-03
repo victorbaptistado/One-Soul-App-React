@@ -19,6 +19,12 @@ return initialValue || "";
 });
 
 
+
+
+
+
+
+
 useEffect(() => {
 localStorage.setItem("model1",JSON.stringify(model1));
 
@@ -44,13 +50,13 @@ localStorage.setItem("model1",JSON.stringify(model1));
         <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p>
 
         <br></br><br></br>
-        <form onSubmit>
-        <h2><input type="text" value={model1} onChange={(e) => setModel(e.target.value) } placeholder={"model 1"} aria-label="model 1"/> </h2>
+        <form>
+        <h2><input type="text" value={model1} onChange={(e) => setModel(e.target.value) } placeholder={"model 1"} aria-label="model 1" required/> </h2>
         <h2><input type="text" placeholder={"model 2"} aria-label="model 2"/></h2>
         <h2><input type="text" placeholder={"model 3"} aria-label="model 3"/> </h2>
         <br/><br/>
         <div className="btnColumns">
-     
+        {/*<input className="btnIntro" type="submit"/> */}
         </div>
         </form>
 
