@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
+/*import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';*/
 import Menu from './Images/Utilities/Menu.gif';
 import Exercise from './Exercise';
 

@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
-import Buttons from './Buttons';
-import Challenge from './Challenge';
-import Challengeform from './Challengeform';
-import ImagesChallenge from './ImagesChallenge';
-import firstImage from "./Images/Challenges/01-Yoga-Lady.png"
-import secondImage from "./Images/Challenges/04-Posture.jpg"
-//import Text from './Text';
+import React from 'react'
+import Body from './Body';
+import firstImage from "./Images/Challenges/01-Yoga-Lady.png";
+import secondImage from "./Images/Challenges/04-Posture.jpg";
+import { text } from '@fortawesome/fontawesome-svg-core';
+import { useState } from 'react';
+
+
 
 const Texts = () => {
 
+
+ 
     const [texts, setText] = useState([
         {
           header: "Are you ready?",
@@ -91,42 +93,21 @@ That's your first path to a higher social state.`,
         },
       ])
 
-
       const [count, setCount] = useState(1);
-      
+
       let textFilt = texts.filter(text => text.id === count) ;
+     
 
+ 
     return (
-      
-      textFilt.map(text => 
-      <div key={text.id}>
+
+    <>
+    <Body textFilt={textFilt} count={count} setCount={setCount}/>
+    </>
 
 
-      <div className={`${(count > 2) && (count !== 4) & (count !== 6) ? 'columns' : ""} `}  > 
-      <div className="container1" >
-
-
-      {count === 6 ? 
-      <Challengeform text={text} count={count} setCount={setCount} /> :
-      <Challenge text={text} count={count} setCount={setCount} />    
-      }
-
-
-
-    <Buttons key={text.id} count={count} setCount={setCount}/>
-      </div>
-      <div className="container2">
-
-      {(count !== 4),(count !== 6) ?
-      <ImagesChallenge text={text}/> : ""
-      }
-
-      </div> 
-      </div>
-      </div>
-      )
-        
-    );
-      }
+  
+    )
+}
 
 export default Texts

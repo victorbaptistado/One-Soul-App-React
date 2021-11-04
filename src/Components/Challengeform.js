@@ -1,5 +1,4 @@
 import React from 'react';
-import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import Menu from './Images/Utilities/Menu.gif';
 import { useState,useEffect } from 'react';
 

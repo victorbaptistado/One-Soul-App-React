@@ -1,20 +1,21 @@
 
 import './App.css';
 import Logo from './Components/Logo';
-import Body from './Components/Body';
-
+import Buttons from './Components/Buttons';
+import Texts from './Components/Texts'
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 
 function App() {
 
-
+  
  
   return (
     <>
     <Logo />
     <div className="wrapper" >
-    <Body />
-
+    <Texts />
+    
     </div>
     </>
   );
