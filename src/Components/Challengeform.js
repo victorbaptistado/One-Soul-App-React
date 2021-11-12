@@ -42,6 +42,12 @@ localStorage.setItem("model1",JSON.stringify(model1));
         {count > 1 ?
         <a href="./App.js" className="homebtn"><img src={Menu}/></a> : ""}
 
+
+    {/* It's missing the selectTopic here. Maybe select topic can become a component.*/}
+        
+ 
+
+
         <h2 >{text.header}</h2>
   
         <br/><br/>
