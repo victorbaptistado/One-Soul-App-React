@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/One-Soul-App-React/static/css/main.d98de269.chunk.css",
+    "main.js": "/One-Soul-App-React/static/js/main.020592e5.chunk.js",
+    "main.js.map": "/One-Soul-App-React/static/js/main.020592e5.chunk.js.map",
+    "runtime-main.js": "/One-Soul-App-React/static/js/runtime-main.cd7d3c15.js",
+    "runtime-main.js.map": "/One-Soul-App-React/static/js/runtime-main.cd7d3c15.js.map",
+    "static/js/2.90059b92.chunk.js": "/One-Soul-App-React/static/js/2.90059b92.chunk.js",
+    "static/js/2.90059b92.chunk.js.map": "/One-Soul-App-React/static/js/2.90059b92.chunk.js.map",
+    "static/js/3.06cad7ca.chunk.js": "/One-Soul-App-React/static/js/3.06cad7ca.chunk.js",
+    "static/js/3.06cad7ca.chunk.js.map": "/One-Soul-App-React/static/js/3.06cad7ca.chunk.js.map",
+    "index.html": "/One-Soul-App-React/index.html",
+    "static/css/main.d98de269.chunk.css.map": "/One-Soul-App-React/static/css/main.d98de269.chunk.css.map",
+    "static/js/2.90059b92.chunk.js.LICENSE.txt": "/One-Soul-App-React/static/js/2.90059b92.chunk.js.LICENSE.txt",
+    "static/media/01-Yoga-Lady.2fa28d35.png": "/One-Soul-App-React/static/media/01-Yoga-Lady.2fa28d35.png",
+    "static/media/04-Posture.625e0823.jpg": "/One-Soul-App-React/static/media/04-Posture.625e0823.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd7d3c15.js",
+    "static/js/2.90059b92.chunk.js",
+    "static/css/main.d98de269.chunk.css",
+    "static/js/main.020592e5.chunk.js"
+  ]
+}
