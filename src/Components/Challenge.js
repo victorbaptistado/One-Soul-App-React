@@ -38,7 +38,7 @@ const handle = (selectedTopic) =>{
 
     {/*---- selectTOPIC ----*/}
     {count > 1 ?
-    <><select className="selectTopic" onChange={e => {const selectedTopic = e.target.value; handle(selectedTopic) }}>
+    <><select className="select" onChange={e => {const selectedTopic = e.target.value; handle(selectedTopic) }}>
       <option value={"Select Topic"}>Select Topic</option>
       <option value={"Body & Mind"}>Body & Mind</option>
       <option value={"Music Boost"}>Music Boost</option>

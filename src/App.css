@@ -63,12 +63,6 @@
   flex-direction: row;
 }
 
-.selectTopic {
-  margin-top: 2.2%;
-  margin-left: 5rem;
-  height: fit-content;
-}
-
 .exercise {
   background-color: white;
   color: red;
@@ -191,8 +185,9 @@ input {
 }
 
 .homebtn {
-  margin: 1% 0% 0% 3%;
-  width: 5%;
+  margin: 0.9% 0% 0% 3%;
+  width: 3.8%;
+  height: 10%;
   border-radius: 90%;
 }
 
@@ -204,4 +199,27 @@ input {
   width: fit-content;
   height: fit-content;
   margin-left: 10%;
+}
+
+/* ---- SELECT STYLING --- */
+
+.select {
+  margin-top: 3.5rem;
+  margin-left: 15rem;
+  display: block;
+  width: 10em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 0.25em;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+select {
+  height: 100%;
+  margin: 0%;
+  padding: 0 0 0 0.5em;
+  color: #fff;
+  cursor: pointer;
 }
