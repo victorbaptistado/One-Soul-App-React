@@ -11,9 +11,6 @@ const Body = ({textFilt, count, setCount}) => {
 
 
 
-
-
-
     return (
     
     
@@ -26,20 +23,14 @@ const Body = ({textFilt, count, setCount}) => {
 
       
       {/*---- SET DISPLAY (Single Column || Double) ----*/}
-      <div className={`${(count > 2) && (count !== 4) & (count !== 6) & (count !== 8)? 'columns' : ""} `}  > 
+      <div className={`${(text.doubleColumn) ? 'columns' : ""} `}  > 
       <div className="container1" >
-
-
-
-
-
-      
+    
       {/*---- SET TYPE (Regular || Form) ----*/}
-      {count === 8 ? 
+      {text.challengeForm ? 
       <Challengeform text={text} count={count} setCount={setCount} /> :
       <Challenge text={text} count={count} setCount={setCount} />    
       }
-
 
       {/* ---- GENERAL BUTTONS ---- */ }
     <Buttons key={text.id} count={count} setCount={setCount}/>
@@ -49,7 +40,7 @@ const Body = ({textFilt, count, setCount}) => {
 
 
       {/* ---- SET IMAGE CHALLENGE ----*/}
-      {(count !== 4),(count !== 6), (count !== 8)?
+      {text.imageChallenge ?
       <ImagesChallenge text={text}/> : ""
       }
 

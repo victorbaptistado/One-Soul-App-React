@@ -68,9 +68,9 @@
   color: red;
   text-align: center;
   width: fit-content;
-  padding: 3% 0% 3% 0%;
-  margin-top: 2%;
-  margin-left: 20%;
+  height: fit-content;
+  padding: 3% 0% 0% 0%;
+  margin: 2% 3% 0% 15%;
   border-radius: 2rem;
 }
 
@@ -80,8 +80,8 @@
   background-color: blue;
   color: white;
   padding: 1% 2% 1% 2%;
-  width: 100%;
-  margin: 0%;
+  width: fit-content;
+  margin: 0% 0% 0% 0%;
   border-radius: 2rem;
 }
 

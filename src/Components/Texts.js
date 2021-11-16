@@ -1,7 +1,9 @@
 import React from 'react'
 import Body from './Body';
-import firstImage from "./Images/Challenges/01-Yoga-Lady.png";
-import secondImage from "./Images/Challenges/04-Posture.jpg";
+import yogaImage from "./Images/Challenges/01-Yoga-Lady.png";
+import postureImage from "./Images/Challenges/04-Posture.jpg";
+import danceImage from "./Images/Challenges/05-Dance.jpg";
+import freddyMercuryImage from "./Images/Challenges/06-Freddy-Mercury.jpg";
 import { useState } from 'react';
 
 
@@ -12,6 +14,7 @@ const Texts = () => {
  
     const [texts, setText] = useState([
         {
+ 
           header: "Are you ready?",
           body:
           <div>
@@ -34,79 +37,149 @@ const Texts = () => {
         },
         {
           header: "Mindset Builder",
-          body: `      It all starts with the Mind-Set. 
-      It's about opening yourself to a richer state and dive into it. 
-      Delight ! 
+          doubleColumn: true,
+          imageChallenge:true,
+          body: `It all starts with the Mind-Set. 
+It's about opening yourself to a richer state and dive into it. 
 
-      Before we go to the field and build-up your social skills on practice, 
-      we'll develop your inner state to a happier, more confident state. 
+Before we go to the field and build-up your social skills on practice, 
+we'll develop your inner state to a happier & more confident state. 
 
-      Let's build your mindset!
+Let's build your mindset now!
           `,
-          image: <img className="image-challenge" src={firstImage}/>,
+          image: <img className="image-challenge" src={yogaImage}/>,
           id: 3,
         
         },
         {
           header:"Body and Mind",
-      body:`  Mind affects body. 
-  Body affects mind.
-  A healthy life is the way to allow yourself for the best you can become.
-  Take care of your body! Create healthy habits: 
-  Improve your diet, do physical exercises (lifting weights, jogging, martial arts).  
-  These are the foundations for your social presence. We won't dive too deep on these topics. 
+      body:`Mind affects body. 
+Body affects mind.
 
-  Now we'll focus on the correct use of the body & how you can use it to alter your inner state. 
-  Using your body correctly is definitely the easiest path 
-  for a mindset change that will lead you to an active social presence. `,
+What we'll seek during this first topic is to enhance Social Energy via body.
+We'll focus on the correct use of the body & how you can alter your inner state simply by moving it. 
+Using your body correctly is definitely the easiest path 
+for a mindset change that will lead you to an active social presence. 
+
+Remember: a good body starts with healthy habits, thus take care of your body!
+Improve your diet, do physical exercises regularly (lifting weights, jogging, martial arts), stretch everyday -  
+These are the foundations for social presence. 
+We won't dive too deep into topics of Health during this course.
+Later courses will show you how to do that. 
+For now we'll focus solely on Social Energy and Charisma enhance.
+ `,
           id: 4,
         },
         {
-          header: "Body and Mind",
+          header: "Posture",
+          doubleColumn: true,
           exerciseAllow: true,
-          exerciseInfo: "Why is it so important? As body affects the mind, finding a position of confidence can reduce social anxiety.",
-          exercise: `Get up. Shoulders back! 
-Look above! Upgrade your posture. 
-Every moment that you need a confidence boost, find that posture. 
-That's your first path to a higher social state.`,
-      image: <img className="image-challenge" src={secondImage}/>,
-          id: 5,
+          imageChallenge: true,
+          exercise: `Stand up straight. Shoulders back! 
+Level your head and look above! Upgrade your posture. 
+Every moment when you feel your mood sinking, 
+or when you need to boost your confidence, 
+find that posture.
+ `,
+exerciseInfo: `Why is it so important? As body affects mind, finding a correct posture can induce you 
+to a state of equilibrium and optimal energy. 
+It can reduce social anxiety and boost levels of Social Energy.`,
+      image: <img className="image-challenge" src={postureImage}/>,
+        id: 5,
         },
         {
           header: "Music Boost",
-          body: `Time for fun! Music can be an amazing tool for social presence. 
-          It's one of the best ways to alter mind states. 
+          body: `Music can be an amazing tool for social presence. 
+It's one of the best ways to alter mind states and boost Social Energy. 
+Loads of researches have found that music benefits memory and cognitive performance, it reduces depression and anxiety - among other benefits. 
   
-          Go to your phone, create a playlist, or many as you want. Call it "Social Boost", whatever you may want to identify it.
-          Meditate about the occasion, how do you want to behave? 
-          If it's a party or a work meeting, which you need to evoque strong presence, an energetic playlist may suit you. 
-          If it's an event in which you need to be on control and intellectually aware, classic music may be the answer.
-  
-          Once you have created your playlist, dive into it. 
-          But how? It may sound weird, but start dancing! 
-          Yes, dance alone, dance with yourself. 
-          Remember, body affects mind: 
-          Once you start moving, you're telling your mind how to behave.
-          Use that before any social occasion and have fun!
-          `,
+Time for fun! 
+Go to your phone, create a playlist (or many as you want). 
+Call it "Social Boost", whatever you may want to identify it.
+Before an upcoming event, ask yourself: how do you wish to behave? 
+If it's a party or a work meeting which you need to evoque strong social presence, an energetic playlist may suit you. 
+If it's an event in which you need to be on control and intellectually aware, classic music may be the answer.
+Find songs that works for you in each occasion.`,
           id: 6,
           },
           {
-            header: "The Magician",
-            body: `Now that we learned about how body affects mind, it's time for us to dive into the imagination realm.
-  
-            Imagination is key to success. Imagination can release a powerfull social mindset.`,
-            image: <img className="image-challenge" src={""}/>,
+            header: "",
+            doubleColumn: true,
+            imageChallenge: true,
+            exerciseAllow: true,
+            exercise: `Once you have created your playlist, dive into the song. 
+But how? It may sound weird, but start dancing! 
+Yes, dance alone, dance with yourself. 
+That way you're warming up your Social Energy, boosting your mood.   
+You're getting ready for the social occasion. Have fun!
+ `,
+ exerciseInfo: `Remember, body affects mind: 
+ Once you start moving, following the song's rythm, you're altering your inner state. 
+ You're leading your mind to match the body's energy, which boosts your Social Eenergy. `,
+            image: <img className="image-challenge" src={danceImage}/>,
             id: 7,
+            },
+
+            {
+            header: "Gesture Anchor",
+            doubleColumn: true,
+            imageChallenge: true,
+            body: `Have you asked yourself why artists have their own signature moves? 
+Look at that picture, Freddy Mercury signature's gesture he evoqued in literally every concert.
+          
+Many artists do that intuitively, they are gathered by the song.
+Their gestures helps them flow into the mood. 
+
+Good performers are state masters, 
+they can shift their moods so to match the form of art they're expressing.
+Their entire body reveals that state. The gestures they evoque anchor them into that state of mind.
+Consciously or unconsciously, it helps them to keep the mood.
+By that, they boost their confidence.
+
+The good part is, you don't need to be a great artist to use it.
+A signature's gesture can boost anyone's Social Energy and confidence. 
+It's so easy! Let's create yours...`,
+            image: <img className="image-challenge" src={freddyMercuryImage}/>,
+            id: 8,
+            },
+
+
+            {
+              header: "",
+              doubleColumn: true,
+              imageChallenge: true,
+              exerciseAllow: true,
+              exercise: ``,
+              id: 9,
+              },
+
+
+
+
+          {           
+            header: "The Magician",
+            body: `Now that we've learned about how body affects mind, it's time for us to dive into the imagination realm.
+  
+Imagination is key to success. Imagination can release a powerfull social mindset.`,
+            image: <img className="image-challenge" src={""}/>,
+            id: "",
           },
           {
           header: "Role Model",
+          challengeForm: true,
           body: `Now I want you to think about 3 people who you can model their actions. 
-          Write down their names, we'll use them as models to achieve your goals. 
-          Reflect about their values and beliefs  . In time of doubts, ask yourself: what would they do? `,
-          id: 8,
+Write down their names, we'll use them as models to achieve your goals. 
+Reflect about their values and beliefs  . In time of doubts, ask yourself: what would they do? `,
+          id: "",
         },
       ])
+
+
+
+
+
+
+
 
       const [count, setCount] = useState(1);
 

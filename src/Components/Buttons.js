@@ -1,6 +1,7 @@
 import React from 'react';
 import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 const Buttons = ({  count, setCount }) => {
 
@@ -14,8 +15,8 @@ const Buttons = ({  count, setCount }) => {
         <div className="btnColumns"> 
         <br/><br/>
             <button className="btnIntro" onClick={()=> setCount(++ count)}> Social Development</button>   
-            <button className="btnIntro"><img href=""/>Physical Development</button>
-            <button className="btnIntro">Self Development</button>
+            <button className="btnIntro"><FontAwesomeIcon icon={faLock} style={{ fontSize: "2rem",color: "grey"}} /> Productivity Enhance</button>
+            <button className="btnIntro"><FontAwesomeIcon icon={faLock} style={{ fontSize: "2rem",color: "grey"}}/> Meditation Academy</button>
          </div> : ""}
 
 

@@ -20,8 +20,8 @@ const handle = (selectedTopic) =>{
     case "Music Boost":
         setCount(6)
         break;
-    case "The Magician":
-        setCount(7)
+    case "Gesture Anchor":
+        setCount(8)
         break;
     }
     
@@ -42,7 +42,7 @@ const handle = (selectedTopic) =>{
       <option value={"Select Topic"}>Select Topic</option>
       <option value={"Body & Mind"}>Body & Mind</option>
       <option value={"Music Boost"}>Music Boost</option>
-      <option value={"The Magician"}>The Magician</option>
+      <option value={"Gesture Anchor"}>Gesture Anchor</option>
       </select></>: ""
     }
       </div>
