@@ -47,8 +47,9 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin-left: 34%;
-  margin-right: 15%;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 30%;
 }
 
 .rowExercise {
@@ -87,11 +88,22 @@
 }
 
 .image-challenge {
-  margin-top: 2%;
+  margin-top: 3.2rem;
   margin-bottom: 2%;
   margin-left: 0%;
   border-radius: 0rem 2rem 0rem 2rem;
   width: 85%;
+}
+
+.image-challenge-increase {
+  display: grid;
+  grid-template-rows: 5% 95%;
+  margin-top: 3.2rem;
+  position: absolute;
+  border-style: solid;
+  background-color: cadetblue;
+  margin: -35% -50% -40% -55%;
+  width: 70%;
 }
 
 /* TEXT */

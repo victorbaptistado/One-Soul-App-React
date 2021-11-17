@@ -18,12 +18,10 @@ const Body = ({textFilt, count, setCount}) => {
     textFilt.map((text) => 
 
 <>
-    
-   
-  
-    
+    {/*---- Header Button ---- */}
       <div key={text.id}>
-      <ButtonsHeader key={text.id} count={count} setCount={setCount}/>
+      <ButtonsHeader count={count} setCount={setCount}/>
+
 
       {/*---- SET DISPLAY (Single Column || Double) ----*/}
       <div className={`${(text.doubleColumn) ? 'columns' : ""} `}  > 
@@ -34,10 +32,8 @@ const Body = ({textFilt, count, setCount}) => {
       <Challengeform text={text} count={count} setCount={setCount} /> :
       <Challenge text={text} count={count} setCount={setCount} />    
       }
+      </div> 
 
-      {/* ---- GENERAL BUTTONS ---- */ }
-    <ButtonsBottom key={text.id} count={count} setCount={setCount}/>
-      </div>
       
       <div className="container2">
 
@@ -46,9 +42,14 @@ const Body = ({textFilt, count, setCount}) => {
       {text.imageChallenge ?
       <ImagesChallenge text={text}/> : ""
       }
-
-      </div> 
       </div>
+      </div>
+
+      {/* ---- GENERAL BUTTONS ---- */ }
+      <ButtonsBottom count={count} setCount={setCount}/>
+ 
+
+   
       </div>
       </>
     )

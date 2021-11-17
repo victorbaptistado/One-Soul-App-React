@@ -24,8 +24,8 @@ const ButtonsHeader = ({  count, setCount }) => {
     {/*  TEXTS: CHALLENGES AND INTRO  */}
         
         
-        {count > 1 ?
-        <a href="./App.js" className="homebtn"><img src={Menu}/></a> : ""}
+    {count > 1 ?
+    <a href="./App.js" className="homebtn"><img src={Menu}/></a> : ""}
 
     {/*---- selectTOPIC ----*/}
     {count > 1 ?
