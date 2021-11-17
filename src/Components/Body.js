@@ -1,6 +1,7 @@
 import { text } from '@fortawesome/fontawesome-svg-core';
 import React, { useState } from 'react';
-import Buttons from './Buttons';
+import ButtonsBottom from './ButtonsBottom';
+import ButtonsHeader from './ButtonsHeader';
 import Challenge from './Challenge';
 import Challengeform from './Challengeform';
 import ImagesChallenge from './ImagesChallenge';
@@ -15,13 +16,15 @@ const Body = ({textFilt, count, setCount}) => {
     
     
     textFilt.map((text) => 
-      
+
+<>
+    
+   
+  
+    
       <div key={text.id}>
+      <ButtonsHeader key={text.id} count={count} setCount={setCount}/>
 
-
-
-
-      
       {/*---- SET DISPLAY (Single Column || Double) ----*/}
       <div className={`${(text.doubleColumn) ? 'columns' : ""} `}  > 
       <div className="container1" >
@@ -33,7 +36,7 @@ const Body = ({textFilt, count, setCount}) => {
       }
 
       {/* ---- GENERAL BUTTONS ---- */ }
-    <Buttons key={text.id} count={count} setCount={setCount}/>
+    <ButtonsBottom key={text.id} count={count} setCount={setCount}/>
       </div>
       
       <div className="container2">
@@ -47,6 +50,7 @@ const Body = ({textFilt, count, setCount}) => {
       </div> 
       </div>
       </div>
+      </>
     )
         
     );

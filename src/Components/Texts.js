@@ -12,6 +12,8 @@ const Texts = () => {
 
 
  
+    const [count, setCount] = useState(1);
+
     const [texts, setText] = useState([
         {
  
@@ -176,12 +178,6 @@ Reflect about their values and beliefs  . In time of doubts, ask yourself: what 
 
 
 
-
-
-
-
-
-      const [count, setCount] = useState(1);
 
       let textFilt = texts.filter(text => text.id === count) ;
      

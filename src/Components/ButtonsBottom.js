@@ -3,7 +3,7 @@ import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 
-const Buttons = ({  count, setCount }) => {
+const ButtonsBottom = ({  count, setCount }) => {
 
 
 
@@ -23,7 +23,7 @@ const Buttons = ({  count, setCount }) => {
         {/*----- BUTTON NEXT & RETURN -----*/}
 
         <div className={`${count > 2 ? "row" :"btnColumns"}`}>
-            <br/>
+    
         {  count > 2 ? 
         <button className="returnbtn" onClick={()=> setCount(-- count)}><img src={ArrowLeft}/></button> :""}
         {count > 1 ?
@@ -35,4 +35,4 @@ const Buttons = ({  count, setCount }) => {
              
 }
 
-export default Buttons
+export default ButtonsBottom
