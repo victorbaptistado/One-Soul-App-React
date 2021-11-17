@@ -11,21 +11,23 @@ const [imageSize, setImageSize] = useState("")
     const increaseSize = () =>
     setImageSize(
     <>
-
     <div className="image-challenge-increase">
     <button onClick={() => setImageSize("")}><FontAwesomeIcon icon={faTimesCircle} style={{fontSize: "3rem", color: "red"}}/></button>
-    {text.image}</div>
+    {text.image}
+    </div>
     </>
     );
 
     return (
-<>
-        <div className="image-challenge">
+        <>
+     
         {text.image} 
-        </div>
+     
+        <button style={{borderRadius:"3rem", marginLeft:"35%", backgroundColor:"white", cursor:"pointer"}} onClick={() => increaseSize()}><FontAwesomeIcon icon={faPlus} style={{fontSize:"2rem", color:"green"}} /></button>
+        <h5 style={{marginLeft:"23%"}}>Maximize image</h5>
         {imageSize}
-        <button onClick={() => increaseSize()}><FontAwesomeIcon icon={faPlus} /></button>
-</>
+        
+     </>
         
 
     )

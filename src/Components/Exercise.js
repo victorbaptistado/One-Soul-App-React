@@ -34,7 +34,7 @@ const [noInfo, setInfo] = useState( "" );
       <div className="exercise" > 
         <div className="rowExercise" >
           
-        <h4 style={{fontFamily: "cursive"}}>Exercise!</h4>
+        <h5 style={{fontFamily: "cursive"}}>Exercise!</h5>
         <button onClick={() => appear()}  className="infobtn"><FontAwesomeIcon icon={faInfoCircle} style={{ fontSize: "4rem",color: "blue"}} /></button> 
 
         </div>

@@ -19,7 +19,7 @@ const Body = ({textFilt, count, setCount}) => {
 
 <>
     {/*---- Header Button ---- */}
-      <div key={text.id}>
+      <div key={text.id} >
       <ButtonsHeader count={count} setCount={setCount}/>
 
 
