@@ -131,7 +131,8 @@ Look at that picture, Freddy Mercury signature's gesture he evoqued in literally
 Many artists do that intuitively, they are gathered by the song.
 Their gestures helps them flow into the mood. 
 
-Good performers are state masters, they can shift their moods so to match the form of art they're expressing.
+Good performers are state masters, 
+they can shift their moods so to match the form of art they're expressing.
 Their entire body reveals that state. The gestures they evoque anchor them into that state of mind.
 Consciously or unconsciously, it helps them to keep the mood. By that, they boost their confidence.
 
@@ -145,7 +146,6 @@ It's so easy! Let's create yours...`,
 
             {
               header: "",
-              doubleColumn: true,
               imageChallenge: true,
               exerciseAllow: true,
               exercise: ``,
