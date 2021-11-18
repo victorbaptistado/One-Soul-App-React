@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 
 
 
-const Challengeform = ({text, count}) => {
+const Challengeform = ({key, text, count}) => {
  
 
 
@@ -17,42 +17,25 @@ const initialValue = JSON.parse(saved);
 return initialValue || "";
 });
 
-
-
-
-
-
-
-
 useEffect(() => {
 localStorage.setItem("model1",JSON.stringify(model1));
-
-
 }, [model1]); 
 
 
 
 
     return (
-        <>
+    <>
 
     {/*  TEXTS: CHALLENGES AND INTRO  */}
         
-        <br/>  
-        {count > 1 ?
-        <a href="./App.js" className="homebtn"><img src={Menu}/></a> : ""}
+      <br/>  
 
-
-    {/* It's missing the selectTopic here. Maybe select topic can become a component.*/}
-        
- 
-
-
-        <h2 >{text.header}</h2>
+        <h2>{text.header}</h2>
   
         <br/><br/>
   
-        <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p>
+        <p style={{textAlign:"center",whiteSpace: "pre-wrap"}}>{text.body}</p>
 
         <br></br><br></br>
         <form>
@@ -65,7 +48,7 @@ localStorage.setItem("model1",JSON.stringify(model1));
         </div>
         </form>
 
-        </>
+    </>
     ) 
         }
 

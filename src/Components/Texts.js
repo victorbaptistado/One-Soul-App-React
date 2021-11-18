@@ -39,7 +39,6 @@ const Texts = () => {
         },
         {
           header: "Mindset Builder",
-          doubleColumn: true,
           imageChallenge:true,
           body: `It all starts with the Mind-Set. 
 It's about opening yourself to a richer state and dive into it. 
@@ -54,7 +53,7 @@ Let's build your mindset now!
         
         },
         {
-          header:"Body and Mind",
+      header:"Body and Mind",
       body:`Mind affects body. 
 Body affects mind.
 
@@ -73,12 +72,13 @@ For now we'll focus solely on Social Energy and Charisma enhance.
           id: 4,
         },
         {
-          header: "Posture",
-          doubleColumn: true,
+          header: "Posture!",
           exerciseAllow: true,
           imageChallenge: true,
-          exercise: `Stand up straight. Shoulders back! 
-Level your head and look above! Upgrade your posture. 
+          exercise: `Stand up straight.
+Shoulders back! 
+Level your head and look above! 
+Upgrade your posture. 
 Every moment when you feel your mood sinking, 
 or when you need to boost your confidence, 
 find that posture.
@@ -93,11 +93,11 @@ It can reduce social anxiety and boost levels of Social Energy.`,
           header: "Music Boost",
           body: `Music can be an amazing tool for social presence. 
 It's one of the best ways to alter mind states and boost Social Energy. 
-Loads of researches have found that music benefits memory and cognitive performance, it reduces depression and anxiety - among other benefits. 
+Loads of researches have found that music benefits memory and cognitive performance, 
+it reduces depression and anxiety - among other benefits. 
   
-Time for fun! 
-Go to your phone, create a playlist (or many as you want). 
-Call it "Social Boost", whatever you may want to identify it.
+Time for fun! Go to your phone, create a playlist (or many as you want). 
+Call it "Social Boost", whatever you may want to identify it. 
 Before an upcoming event, ask yourself: how do you wish to behave? 
 If it's a party or a work meeting which you need to evoque strong social presence, an energetic playlist may suit you. 
 If it's an event in which you need to be on control and intellectually aware, classic music may be the answer.
@@ -105,10 +105,9 @@ Find songs that works for you in each occasion.`,
           id: 6,
           },
           {
-            header: "",
-            doubleColumn: true,
-            imageChallenge: true,
+            header: "Dance!",
             exerciseAllow: true,
+            imageChallenge: true,
             exercise: `Once you have created your playlist, dive into the song. 
 But how? It may sound weird, but start dancing! 
 Yes, dance alone, dance with yourself. 
@@ -132,11 +131,9 @@ Look at that picture, Freddy Mercury signature's gesture he evoqued in literally
 Many artists do that intuitively, they are gathered by the song.
 Their gestures helps them flow into the mood. 
 
-Good performers are state masters, 
-they can shift their moods so to match the form of art they're expressing.
+Good performers are state masters, they can shift their moods so to match the form of art they're expressing.
 Their entire body reveals that state. The gestures they evoque anchor them into that state of mind.
-Consciously or unconsciously, it helps them to keep the mood.
-By that, they boost their confidence.
+Consciously or unconsciously, it helps them to keep the mood. By that, they boost their confidence.
 
 The good part is, you don't need to be a great artist to use it.
 A signature's gesture can boost anyone's Social Energy and confidence. 
@@ -152,7 +149,7 @@ It's so easy! Let's create yours...`,
               imageChallenge: true,
               exerciseAllow: true,
               exercise: ``,
-              id: 9,
+              id: 10,
               },
 
 
@@ -172,7 +169,7 @@ Imagination is key to success. Imagination can release a powerfull social mindse
           body: `Now I want you to think about 3 people who you can model their actions. 
 Write down their names, we'll use them as models to achieve your goals. 
 Reflect about their values and beliefs  . In time of doubts, ask yourself: what would they do? `,
-          id: "",
+          id: 9,
         },
       ])
 

@@ -27,15 +27,11 @@
 }
 
 .container1 {
-  margin: 0% 0% 0% 0%;
+  margin: 0%;
 }
 
 .container2 {
-}
-
-.columns {
-  display: grid;
-  grid-template-columns: 65% 35%;
+  float: right;
 }
 
 .btnColumns {
@@ -68,11 +64,12 @@
 .exercise {
   background-color: white;
   color: red;
-  text-align: center;
+  border-style: dashed;
+  text-align: left;
   width: fit-content;
   height: fit-content;
-  padding: 3% 0% 0% 0%;
-  margin: 2% 3% 0% 15%;
+  padding: 2% 2% 0% 2%;
+  margin: 2% 10% 0% 10%;
   border-radius: 2rem;
 }
 
@@ -88,11 +85,13 @@
 }
 
 .image-challenge {
-  margin-top: 0rem;
+  shape-outside: circle(20%);
+  margin-top: 0;
   margin-bottom: 2%;
   margin-left: 0%;
   border-radius: 0rem 2rem 0rem 2rem;
   width: 100%;
+  max-width: 380px;
 }
 
 .image-challenge-increase {
@@ -139,14 +138,14 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
 p {
   font-size: 2rem;
-  text-align: center;
-  margin: 0% 3% 0% 3%;
+  text-align: justify;
+  margin: 0% 0% 0% 0%;
 }
 
 input {

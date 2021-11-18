@@ -22,19 +22,6 @@ const Body = ({textFilt, count, setCount}) => {
       <div key={text.id} >
       <ButtonsHeader count={count} setCount={setCount}/>
 
-
-      {/*---- SET DISPLAY (Single Column || Double) ----*/}
-      <div className={`${(text.doubleColumn) ? 'columns' : ""} `}  > 
-      <div className="container1" >
-    
-      {/*---- SET TYPE (Regular || Form) ----*/}
-      {text.challengeForm ? 
-      <Challengeform text={text} count={count} setCount={setCount} /> :
-      <Challenge text={text} count={count} setCount={setCount} />    
-      }
-      </div> 
-
-      
       <div className="container2">
 
 
@@ -43,14 +30,24 @@ const Body = ({textFilt, count, setCount}) => {
       <ImagesChallenge text={text}/> : ""
       }
       </div>
+   
+
+      <div className="container1" >
+    
+      {/*---- SET TYPE (Regular || Form) ----*/}
+      {text.challengeForm ? 
+      <Challengeform  text={text} count={count} setCount={setCount} /> :
+      <Challenge text={text} count={count} setCount={setCount} />    
+      }
+      </div> 
+
+      
       </div>
 
       {/* ---- GENERAL BUTTONS ---- */ }
       <ButtonsBottom count={count} setCount={setCount}/>
  
 
-   
-      </div>
       </>
     )
         
