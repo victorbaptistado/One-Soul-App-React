@@ -41,13 +41,10 @@ const Body = ({textFilt, count, setCount}) => {
       }
       </div> 
 
-      
       </div>
 
       {/* ---- GENERAL BUTTONS ---- */ }
-      <ButtonsBottom count={count} setCount={setCount}/>
- 
-
+      <ButtonsBottom text={text} count={count} setCount={setCount}/>
       </>
     )
         

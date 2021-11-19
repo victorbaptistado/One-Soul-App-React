@@ -3,7 +3,7 @@ import React from 'react';
 import Exercise from './Exercise';
 import ImagesChallenge from './ImagesChallenge';
 
-const Challenge = ({text, count, setCount}) => {
+const Challenge = ({text}) => {
 
 
 

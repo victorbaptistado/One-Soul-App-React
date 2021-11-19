@@ -97,21 +97,6 @@
   max-width: 380px;
 }
 
-.image-challenge-increase {
-  position: relative;
-
-  margin: -60% 20% 0% -21rem;
-  width: 300px;
-  /*
-  display: grid;
-  position: absolute;
-  border-style: solid;
-  background-color: cadetblue;
-  margin: -15% -50% -40% -50%;
-  width: 60%;
-  height: fit-content;*/
-}
-
 /* TEXT */
 
 h1 {
@@ -153,6 +138,7 @@ p {
 
 input {
   font-size: 2.3rem;
+  max-width: 90%;
   margin-bottom: 2%;
   padding: 0%;
 }

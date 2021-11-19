@@ -2,10 +2,13 @@ import React from 'react';
 import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
-const ButtonsBottom = ({  count, setCount }) => {
+const ButtonsBottom = ({text, count, setCount }) => {
 
-
+useEffect (() => {
+    window.scrollTo(0,0)
+}, [() => setCount])
 
     return (
 
@@ -22,11 +25,11 @@ const ButtonsBottom = ({  count, setCount }) => {
 
         {/*----- BUTTON NEXT & RETURN -----*/}
 
-        <div className={`${count > 2 ? "row" :"btnColumns"}`}>
+        <div className={`${count > 1 ? "row" :"btnColumns"}`}>
     
-        {  count > 2 ? 
+        {  text.next ? 
         <button className="returnbtn" onClick={()=> setCount(-- count)}><img src={ArrowLeft}/></button> :""}
-        {count > 1 ?
+        {  text.next ? 
         <button className="btn" onClick={()=> setCount(++ count)}>Next</button> : ""} 
         </div>
 

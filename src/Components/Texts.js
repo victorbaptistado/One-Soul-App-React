@@ -33,6 +33,7 @@ const Texts = () => {
           <br/>
           <h4>Once you accomplish a challenge, click the NEXT button. </h4>
           </div>,
+          next: true,
           id: 2,
 
 
@@ -49,6 +50,7 @@ we'll develop your inner state to a happier & more confident state.
 Let's build your mindset now!
           `,
           image: <img className="image-challenge" src={yogaImage}/>,
+          next: true,
           id: 3,
         
         },
@@ -69,6 +71,7 @@ We won't dive too deep into topics of Health during this course.
 Later courses will show you how to do that. 
 For now we'll focus solely on Social Energy and Charisma enhance.
  `,
+        next: true,
           id: 4,
         },
         {
@@ -87,6 +90,7 @@ exerciseInfo: `Why is it so important? As body affects mind, finding a correct p
 to a state of equilibrium and optimal energy. 
 It can reduce social anxiety and boost levels of Social Energy.`,
       image: <img className="image-challenge" src={postureImage}/>,
+      next: true,
         id: 5,
         },
         {
@@ -102,6 +106,7 @@ Before an upcoming event, ask yourself: how do you wish to behave?
 If it's a party or a work meeting which you need to evoque strong social presence, an energetic playlist may suit you. 
 If it's an event in which you need to be on control and intellectually aware, classic music may be the answer.
 Find songs that works for you in each occasion.`,
+          next: true,
           id: 6,
           },
           {
@@ -118,6 +123,7 @@ You're getting ready for the social occasion. Have fun!
  Once you start moving, following the song's rythm, you're altering your inner state. 
  You're leading your mind to match the body's energy, which boosts your Social Eenergy. `,
             image: <img className="image-challenge" src={danceImage}/>,
+            next: true,
             id: 7,
             },
 
@@ -140,15 +146,26 @@ The good part is, you don't need to be a great artist to use it.
 A signature's gesture can boost anyone's Social Energy and confidence. 
 It's so easy! Let's create yours...`,
             image: <img className="image-challenge" src={freddyMercuryImage}/>,
+            next: true,
             id: 8,
+            },
+
+            {
+              header: "Role Model",
+              challengeForm: true,
+              body: `Now I want you to think about 3 people who you can model their actions. 
+    Write down their names, we'll use them as models to achieve your goals. 
+    Reflect about their values and beliefs. In time of doubts, ask yourself: what would they do? `,
+              next: true,
+              id: 9,
             },
 
 
             {
-              header: "",
-              imageChallenge: true,
-              exerciseAllow: true,
-              exercise: ``,
+              
+              header: "DEMO VERSION",
+              body: `This app is a demonstration version, still in very early stages.`,
+ 
               id: 10,
               },
 
@@ -163,14 +180,6 @@ Imagination is key to success. Imagination can release a powerfull social mindse
             image: <img className="image-challenge" src={""}/>,
             id: "",
           },
-          {
-          header: "Role Model",
-          challengeForm: true,
-          body: `Now I want you to think about 3 people who you can model their actions. 
-Write down their names, we'll use them as models to achieve your goals. 
-Reflect about their values and beliefs  . In time of doubts, ask yourself: what would they do? `,
-          id: 9,
-        },
       ])
 
 
