@@ -5,6 +5,7 @@ import ButtonsHeader from './ButtonsHeader';
 import Challenge from './Challenge';
 import Challengeform from './Challengeform';
 import ImagesChallenge from './ImagesChallenge';
+import ProgressBar from './ProgressBar';
 
 //import Text from './Text';
 
@@ -21,6 +22,10 @@ const Body = ({textFilt, count, setCount}) => {
     {/*---- Header Button ---- */}
       <div key={text.id} >
       <ButtonsHeader count={count} setCount={setCount}/>
+
+    {/*---- Progress Bar ---- */}
+      {text.progressbar ?
+      <ProgressBar text={text} /> :""}
 
       <div className="container2">
 

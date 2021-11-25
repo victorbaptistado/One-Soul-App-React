@@ -5,6 +5,7 @@ import postureImage from "./Images/Challenges/04-Posture.jpg";
 import danceImage from "./Images/Challenges/05-Dance.jpg";
 import freddyMercuryImage from "./Images/Challenges/06-Freddy-Mercury.jpg";
 import { useState } from 'react';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 
 
@@ -40,6 +41,12 @@ const Texts = () => {
         },
         {
           header: "Mindset Builder",
+          progressbar: true,
+          internalProgress: 
+          <> 
+          {<progress className="internalProgress"></progress>}
+          </>,
+
           imageChallenge:true,
           body: `It all starts with the Mind-Set. 
 It's about opening yourself to a richer state and dive into it. 
@@ -56,6 +63,8 @@ Let's build your mindset now!
         },
         {
       header:"Body and Mind",
+      progressbar: true,
+      internalProgress: <div className="internalProgress"></div>,
       body:`Mind affects body. 
 Body affects mind.
 
@@ -76,6 +85,8 @@ For now we'll focus solely on Social Energy and Charisma enhance.
         },
         {
           header: "Posture!",
+          progressbar: true,
+          internalProgress: <div className="internalProgress"></div>,
           exerciseAllow: true,
           imageChallenge: true,
           exercise: `Stand up straight.
@@ -95,6 +106,8 @@ It can reduce social anxiety and boost levels of Social Energy.`,
         },
         {
           header: "Music Boost",
+          progressbar: true,
+          internalProgress: <div className="internalProgress"></div>,
           body: `Music can be an amazing tool for social presence. 
 It's one of the best ways to alter mind states and boost Social Energy. 
 Loads of researches have found that music benefits memory and cognitive performance, 
@@ -111,6 +124,8 @@ Find songs that works for you in each occasion.`,
           },
           {
             header: "Dance!",
+            progressbar: true,
+            internalProgress: <div className="internalProgress"></div>,
             exerciseAllow: true,
             imageChallenge: true,
             exercise: `Once you have created your playlist, dive into the song. 
@@ -130,6 +145,8 @@ You're getting ready for the social occasion. Have fun!
             {
             header: "Gesture Anchor",
             doubleColumn: true,
+            progressbar: true,
+            internalProgress: <div className="internalProgress"></div>,
             imageChallenge: true,
             body: `Have you asked yourself why artists have their own signature moves? 
 Look at that picture, Freddy Mercury signature's gesture he evoqued in literally every concert.
@@ -152,6 +169,8 @@ It's so easy! Let's create yours...`,
 
             {
               header: "Role Model",
+              progressbar: true,
+              internalProgress: <div className="internalProgress"></div>,
               challengeForm: true,
               body: `Now I want you to think about 3 people who you can model their actions. 
     Write down their names, we'll use them as models to achieve your goals. 
