@@ -11,61 +11,41 @@ const ProgressBar = ({text}) => {
 
   
   
-  
-  
-  
 
     useEffect(()=>{
+      
         setProgress(
-      function widthUpdate(){
-
-    const widthlol = getComputedStyle(document.documentElement()).getPropertyValue("width");
-
-        /*let width = "0rem";*/
-          function kor (){
-         
+      function widthUpdate(){        
             switch(text.id){
             case 3:
-            return widthlol;      
-            }
+            return 30;      
+            
          
-         /*
             case 4: 
-            width = "6rem";
+           return 40;
      
-            break;
-          }}})
-         /*
-           <div className="internalProgress" style={{width: {lucas}}}>{width}</div>}*/
-            
+            case 5:
+            return 50; 
+            case 6:
+              return 60;
+            case 7:
+            return 70;
+            case 8:
+            return 80;
+            case 9:
+              return 90;
+            case 10:
+            return 100;
+
+                 
     }})}, []);      
-            
-           /*
-            let you = getComputedStyle(trans).setProperty.width({widthnum});
-      */
-   
-            /*
-            let tro = document.getElementsByClassName("internalProgress");
-            let vamo = () => tro[0].setProperty("width", () =>calculation());
-            */     
-               
-             /*   let amplo = ref.current.style = "width: 3rem"; */
-                /*    let trans = document.querySelector(".internalProgress")*/
-        
-           
-     
-    /*
-    function hi(){
-    for (const i = 0; i <= text.id; i++){
-    text.internalProgress++;
-    return text.internalProgress;  
-    }})}
-*/
+         
+
 
     return (
   <>
     <div className="externalProgress" >
-    <div className="internalProgress" style={{width: {progress}}}>{progress}</div>
+    <div className="internalProgress" style={{width: `${progress}%`}}>{progress}</div>
     </div> 
         </>
     )

@@ -29,13 +29,11 @@ const Body = ({textFilt, count, setCount}) => {
 
       <div className="container2">
 
-
       {/* ---- SET IMAGE CHALLENGE ----*/}
       {text.imageChallenge ?
       <ImagesChallenge text={text}/> : ""
       }
       </div>
-   
 
       <div className="container1" >
     
