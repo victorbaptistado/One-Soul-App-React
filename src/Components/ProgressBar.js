@@ -10,8 +10,6 @@ const ProgressBar = ({text}) => {
     const [ progress, setProgress] = useState(0);
     const [opacity, setOpacity] = useState(0);
 
-  
-
     useEffect(()=>{
       
         setProgress(
@@ -32,25 +30,18 @@ const ProgressBar = ({text}) => {
             case 9:
               return 90;
             case 10:
-            return 100;
-
-                 
-    }})}, []);      
-         
-
-
-    useEffect(()=>{
+            return 100; 
+      }})
+  
     setOpacity(
       function opacityUpdate(){  
             
         if(text.id >= 4){
         return 1;           
+        }
+      })
+  }, []);      
  
-        }}
-    )
-    
-    },[])
-
 
     return (
   <>

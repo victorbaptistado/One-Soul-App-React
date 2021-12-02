@@ -1,10 +1,9 @@
 import React from 'react';
-import Menu from './Images/Utilities/Menu.gif';
 import { useState,useEffect } from 'react';
 
 
 
-const Challengeform = ({key, text, count}) => {
+const TheoryForm = ({text}) => {
  
 
 
@@ -77,4 +76,4 @@ const [model3, setModel3] = useState(() => {
     ) 
         }
 
-export default Challengeform
+export default TheoryForm

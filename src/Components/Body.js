@@ -1,9 +1,10 @@
-import { text } from '@fortawesome/fontawesome-svg-core';
+
 import React, { useState } from 'react';
 import ButtonsBottom from './ButtonsBottom';
 import ButtonsHeader from './ButtonsHeader';
+import Theory from './Theory';
+import TheoryForm from './TheoryForm';
 import Challenge from './Challenge';
-import Challengeform from './Challengeform';
 import ImagesChallenge from './ImagesChallenge';
 import ProgressBar from './ProgressBar';
 
@@ -12,12 +13,9 @@ import ProgressBar from './ProgressBar';
 const Body = ({textFilt, count, setCount}) => {
 
 
-
     return (
-    
-    
+        
     textFilt.map((text) => 
-
 <>
     {/*---- Header Button ---- */}
       <div key={text.id} >
@@ -36,12 +34,20 @@ const Body = ({textFilt, count, setCount}) => {
       </div>
 
       <div className="container1" >
-    
-      {/*---- SET TYPE (Regular || Form) ----*/}
-      {text.challengeForm ? 
-      <Challengeform  text={text} count={count} setCount={setCount} /> :
-      <Challenge text={text} count={count} setCount={setCount} />    
-      }
+
+
+      {/*---- THEORY ----*/}
+      {text.theory ?
+      <Theory text={text} />: ""}    
+      
+      {/*---- THEORY FORM ----*/}
+      {text.theoryForm ? 
+      <TheoryForm  text={text}/>:""}
+
+      {/*---- CHALLENGE ----*/}
+      {text.challenge ? 
+      <Challenge  text={text} />:""}
+
       </div> 
 
       </div>
@@ -49,8 +55,7 @@ const Body = ({textFilt, count, setCount}) => {
       {/* ---- GENERAL BUTTONS ---- */ }
       <ButtonsBottom text={text} count={count} setCount={setCount}/>
       </>
-    )
-        
+    )       
     );
     
       }

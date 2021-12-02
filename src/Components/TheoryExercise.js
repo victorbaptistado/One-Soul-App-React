@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-const Exercise = ({text}) => {
+const TheoryExercise = ({text}) => {
 
 
 
@@ -19,14 +19,9 @@ const [noInfo, setInfo] = useState( "" );
   </div>)
   }
 
- 
+
   const buttonClear = () => { setInfo("")};
 
-  /*
-  const disappear = () => {
-    setInfo("");}
-  */
-  
 
     return (
    
@@ -51,4 +46,4 @@ const [noInfo, setInfo] = useState( "" );
     )
 }
 
-export default Exercise
+export default TheoryExercise

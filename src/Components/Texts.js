@@ -5,7 +5,7 @@ import postureImage from "./Images/Challenges/04-Posture.jpg";
 import danceImage from "./Images/Challenges/05-Dance.jpg";
 import freddyMercuryImage from "./Images/Challenges/06-Freddy-Mercury.jpg";
 import { useState } from 'react';
-import { text } from '@fortawesome/fontawesome-svg-core';
+
 
 
 
@@ -14,10 +14,9 @@ const Texts = () => {
 
  
     const [count, setCount] = useState(1);
-
     const [texts, setText] = useState([
         {
- 
+          theory: true,
           header: "Are you ready?",
           body:
           <div>
@@ -25,9 +24,9 @@ const Texts = () => {
          
           challengeChoice: `Choose your challenge:`,
           id: 1,
-
         },
         {
+          theory: true,
           header: "INSTRUCTIONS",
           body:  <div>
           <h4>Congratulation for taking this step. Your journey to self-improvement is about to begin! </h4> 
@@ -36,14 +35,10 @@ const Texts = () => {
           </div>,
           next: true,
           id: 2,
-
-
         },
-        {
+        { theory: true,
           header: "Mindset Builder",
           progressbar: true,
-         
-
           imageChallenge:true,
           body: `It all starts with the Mind-Set. 
 It's about opening yourself to a richer state and dive into it. 
@@ -59,8 +54,10 @@ Let's build your mindset now!
         
         },
         {
+      theory: true,
       header:"Body and Mind",
       progressbar: true,
+
       body:`Mind affects body. 
 Body affects mind.
 
@@ -80,9 +77,10 @@ For now we'll focus solely on Social Energy and Charisma enhance.
           id: 4,
         },
         {
+          theory: true,
           header: "Posture!",
           progressbar: true,
-          exerciseAllow: true,
+          theoryExerciseAllow: true,
           imageChallenge: true,
           exercise: `Stand up straight.
 Shoulders back! 
@@ -100,6 +98,7 @@ It can reduce social anxiety and boost levels of Social Energy.`,
         id: 5,
         },
         {
+          theory: true,
           header: "Music Boost",
           progressbar: true,
           body: `Music can be an amazing tool for social presence. 
@@ -117,9 +116,10 @@ Find songs that works for you in each occasion.`,
           id: 6,
           },
           {
+            theory: true,
             header: "Dance!",
             progressbar: true,
-            exerciseAllow: true,
+            theoryExerciseAllow: true,
             imageChallenge: true,
             exercise: `Once you have created your playlist, dive into the song. 
 But how? It may sound weird, but start dancing! 
@@ -136,8 +136,8 @@ You're getting ready for the social occasion. Have fun!
             },
 
             {
+            theory: true,
             header: "Gesture Anchor",
-            doubleColumn: true,
             progressbar: true,
             imageChallenge: true,
             body: `Have you asked yourself why artists have their own signature moves? 
@@ -160,30 +160,24 @@ It's so easy! Let's create yours...`,
             },
 
             {
+              theoryForm: true,
               header: "Role Model",
               progressbar: true,
-              challengeForm: true,
               body: `Now I want you to think about 3 people who you can model their actions. 
     Write down their names, we'll use them as models to achieve your goals. 
     Reflect about their values and beliefs. In time of doubts, ask yourself: what would they do? `,
               next: true,
               id: 9,
             },
-
-
-            {
-            
+            { 
+              theory: true,
               header: "DEMO VERSION",
               progressbar: true,
               body: `This app is a demonstration version, still in very early stages.`,
- 
               id: 10,
-              },
-
-
-
-
+            },
           {           
+            theory: true,
             header: "The Magician",
             body: `Now that we've learned about how body affects mind, it's time for us to dive into the imagination realm.
   
@@ -191,23 +185,27 @@ Imagination is key to success. Imagination can release a powerfull social mindse
             image: <img className="image-challenge" src={""}/>,
             id: "",
           },
+          {           
+            challenge: true,
+            header: "",
+            body: ``,
+
+            id: "",
+          },
       ])
+   
 
 
 
 
-      let textFilt = texts.filter(text => text.id === count) ;
-     
+      
 
- 
+      let textFilt = texts.filter(text => text.id === count) ; 
+
     return (
-
     <>
     <Body textFilt={textFilt} count={count} setCount={setCount}/>
-    </>
-
-
-  
+    </>  
     )
 }
 
